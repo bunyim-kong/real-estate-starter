@@ -1,0 +1,33 @@
+.card {
+  display: block; /* since they're <a> now */
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.card {
+  flex: 0 0 22em;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card__media {
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 12px;
+}
+
+.card__title {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.card__meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+}

@@ -1,0 +1,46 @@
+.badge {
+  display: inline-block;
+  background: var(--badge);
+  border: 1px solid var(--line);
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  margin-top: 6px;
+}
+
+.pill {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-family: var(--font-family);
+}
+
+.form__group {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.input {
+  font-family: var(--font-family);
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
+.btn:hover {
+  background: var(--accent-600);
+}

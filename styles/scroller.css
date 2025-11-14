@@ -1,0 +1,45 @@
+.scroller {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroller__track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  will-change: transform;
+  animation: marquee var(--marquee-duration, 5s) linear infinite;
+}
+
+.scroller__group {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+/* Pause on hover and show the right cursor */
+.scroller:hover .scroller__track {
+  animation-play-state: paused;
+  cursor: grab;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .scroller__track {
+    animation: none;
+    transform: none;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
