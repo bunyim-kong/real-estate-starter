@@ -13,7 +13,6 @@
   max-width: var(--maxw);
   margin: auto;
   overflow: hidden;
-  padding: 0px 60px;
   background-color: var(--nav-foot);
   display: flex;
   align-items: center;
