@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details-page</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/components/nav.css">
+    <link rel="stylesheet" href="/styles/scroller.css">
+    <link rel="stylesheet" href="/styles/components/card.css">
+    <link rel="stylesheet" href="/styles/components/card-top.css">
+    <link rel="stylesheet" href="/styles/components/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" />
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    
+        <!-- ===== NAV ===== -->
+    <header class="navbar-content">
+        <nav class="navbar">
+            <div class="logo">
+                <a href=""><img src="/../../public/assets/images/logo.png" alt=""></a>
+            </div>
+
+            <div class="nav-links">
+                <ul class="sidebar">
+                    <li><a onclick="hideSidebar()" href=""><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a class="active" href="">Home</a></li>
+                    <li><a href="">Rent</a></li>
+                    <li><a href="">Buy</a></li>
+                    <li><a href="">Agents</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <li><a class="hideOnMobile active" href="">Home</a></li>
+                    <li><a class="hideOnMobile" href="">Rent</a></li>
+                    <li><a class="hideOnMobile" href="">Buy</a></li>
+                    <li><a class="hideOnMobile" href="">Agents</a></li>
+                    <li><a class="hideOnMobile" href="">About</a></li>
+                    <li><a class="hideOnMobile" href="">Contact</a></li>
+                    <li><a class="hideOnMobile menu-btn" onclick="showSidemenu()" href="javascript:void(0)"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="nav-btn dropdown">
+                <a href=""><i class="fas fa-moon"></i> Dark</a>
+                
+            </div>
+
+            <script>
+                function showSidemenu(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+
+                function hideSidebar(){
+                    const hideSidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+        </nav>
+    </header><br><br><br><br><br><br>
+
+    <div class="Details-sechtion">
+        <div class="img-details">
+            <img src="bedroom.jpg" class="hero-photo"><br>
+            <div class="mini-photo-">
+                <img src="swimingpool.jpg" class="mini-photo">
+                <img src="1000s.jpg" class="mini-photo">
+                <img src="_.jpg" class="mini-photo">
+            </div><br><br>
+            <div class="Agent-contact"><br>
+                <h1 class="title-agent-contact">Agent Contact </h1>
+                <p class="body-agent">Have questions or want a viewing? Get in touch for quick support and property details.</p><br>
+
+                <form action="/pages/detail-page/store data.js" method="post" id="store-data">
+
+                    <div class="form-summit">
+                        <label class="Full-name-agent-contact">Full name</label>
+                        <input type="text" class="fillin-agent-acontact" placeholder="fill in">
+                    </div>
+
+                    <div class="form-summit">
+                        <label class="Email-agent-contact">Email</label>
+                        <input type="text" class="Email-agent-acontact" placeholder="inter you Email">
+                    </div>
+
+                    <div class="form-summit">
+                        <label class="How-can-agent-help-agent-contact">How can agent help?</label>
+                        <input type="text" class="massage-agent-acontact" placeholder="massage">
+                    </div>
+
+                    <div class="form-summit">
+                        <input type="submit" class="Send-massage" placeholder="Send">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="text-imformatio-Detail">
+            <h1>1 Bedroom, 1 Bathroom Condo</h1>
+            <p></p>
+            <h1>Description</h1>
+        </div>
+    </div>
+    <h1 class="Related">Related to this</h1>
+   <div class="card---">
+        <div class="card-Related-img-and-imformation">
+             <img src="../../public/assets/images/apartment.jpeg" class="card-image">
+            <div class="card-prince">
+                <h3 class="prince">USD 150,00/year</h3>
+            </div>
+            <div class="title-name-card">
+                <h2 class="name-card">Premium Family House</h2>
+            </div>
+            <div class="imformation-card">
+                <p class="body-card">6391 Eigin St. Celina, Dalaware 10299</p>
+            </div>
+            <div class="number-room">
+                <p><i class="fa-solid fa-bed"></i>2 Bedroom</p>
+                <p><i class="fa-sharp-duotone fa-thin fa-bath"></i>2 badroom</p>
+            </div>
+            <input type="submit" placeholder="View Detail" class="View-Detail-card">
+        </div>
+</body>
+</html>
