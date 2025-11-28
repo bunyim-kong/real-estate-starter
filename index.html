@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/styles/components/card-top.css">
     <link rel="stylesheet" href="styles/components/agent-card.css">
     <link rel="stylesheet" href="/styles/components/card-items.css">
+    <link rel="stylesheet" href="styles/components/subscription.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
     <link rel="stylesheet" href="/styles/components/general.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
@@ -73,27 +75,33 @@
     </header>
 
     <!-- ===== HERO: Search & Filter ===== -->
-    <header class="hero container">
-        <div class="hero__card">
-            <h1 class="hero__title">Find your Home, Appartment &<br> Room
-            in Phnom Penh</h1>
-            <p class="hero__subtitle">Helping you find the perfect property in Phnom Penh,<br>
-             whether it’s for living, investing, or renting.</p>
-            <form class="hero__form" action="#" role="search">
-                <select aria-label="Purpose" id="selectPurpose">
-                    <option>Rent</option>
-                    <option>Buy</option>
-                </select>
-                <select aria-label="Type" id="selectType">
-                    <option>Room</option>
-                    <option>Apartment</option>
-                    <option>House</option>
-                </select>
-                <input class="hero__input" type="text" placeholder="City or district" aria-label="Location" />
-                <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
-                <button class="hero__btn" type="submit">Search</button>
-            </form>
+    <header class="hero">
+        <img src="/public/assets/images/hero-img.jpeg" alt="">
+
+        <div class="container">
+            <div class="hero__card">
+                <h1 class="hero__title">Find your Home, Appartment &<br> Room
+                in Phnom Penh</h1>
+                <p class="hero__subtitle">Helping you find the perfect property in Phnom Penh,<br>
+                whether it’s for living, investing, or renting.</p>
+                <form class="hero__form" action="#" role="search">
+                    <select aria-label="Purpose" id="selectPurpose">
+                        <option>Rent</option>
+                        <option>Buy</option>
+                    </select>
+                    <select aria-label="Type" id="selectType">
+                        <option>Room</option>
+                        <option>Apartment</option>
+                        <option>House</option>
+                    </select>
+                    <input class="hero__input" type="text" placeholder="City or district" aria-label="Location" />
+                    <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
+                    <button class="hero__btn" type="submit">Search</button>
+                </form>
+            </div>
         </div>
+
+        <script src="scripts/index.js"></script>
     </header>
 
     <!-- ===== Featured Properties (Horizontal) ===== -->
@@ -449,6 +457,24 @@
                         <p>“Transparent listings and quick replies.”</p>
                         <div class="quote__name">— Vuthy, Technician</div>
                     </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="subscription-card">
+            <div class="sub-card-content">
+                <img src="/public/assets/images/sub-img.jpeg" alt="">
+
+                
+                <div class="subscribe">
+                    <h1>Stay in touch with us!</h1>
+                    
+                    <div class="subscribtion-infor">
+                        <input class="fill-in" type="email" placeholder="Fill in your email">
+                        <input class="submit" type="submit">
+                    </div>
                 </div>
             </div>
         </div>
