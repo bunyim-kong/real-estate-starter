@@ -87,14 +87,95 @@
     font-size: 15px;
 }
 
+.feature-cols h1 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.cols-content span {
+    display: block;
+    color: var(--muted);
+}
+
+.cols-content i {
+    font-size: 8px;
+    margin-right: 8px;
+}
+
 .description-cols h1 {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .description-cols p {
     font-size: 18px;
     font-weight: 300;
     margin-top: 10px;
+}
+
+.map h1 {
+    font-size: 26px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    margin-top: 10px;
+}
+
+.form-detail {
+    padding: 24px 28px;
+    border-radius: 12px;
+    background-color: var(--card);
+}
+
+.form-detail h1 {
+    font-size: 24px;
+}
+
+.form-detail p {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.subscribe__row {
+    margin-bottom: 24px;
+}
+
+.subscribe__row textarea {
+    width: 100%;
+    height: 180px;
+    padding: 10px 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.subscribe__row ::placeholder {
+    font-size: 12px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 

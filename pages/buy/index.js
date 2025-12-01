@@ -28,7 +28,7 @@ fetch("../../public/data/properties.json")
                     </small>
 
                     <div class="card-btn">
-                        <a href="">View Detail</a>
+                        <a href="/pages/detail-card/index.html">View Detail</a>
                     </div>
                 </div>
             </article>
