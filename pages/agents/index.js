@@ -8,7 +8,7 @@ fetch("../../public/data/agents.json")
         for (let i = 0; i < 12; i++) {
             
             sectionAgentsElement.innerHTML += `
-            <a class="agent-card" href="">
+            <a class="agent-card" href="/pages/agent-detail/index.html?id=${data[i].id}">
                 <div class="agent-card-content">
                     <div class="img-cols">
                         <img src="${data[i].profile_photo}" alt="">

@@ -259,6 +259,14 @@ h1{
     transform: translateY(-50%) scale(1.02);
 }
 
+#agentCard {
+    margin-bottom: 24px;
+}
+
+.section__link {
+    margin-bottom: 26px;
+}
+
 
 
 
