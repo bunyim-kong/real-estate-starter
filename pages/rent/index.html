@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="../../styles/components/footer.css">
     <link rel="stylesheet" href="../../styles/components/nav-second.css">
+    <link rel="stylesheet" href="../../styles/components/feature-card.css">
     <link rel="stylesheet" href="../../styles/components/card-items.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
@@ -104,6 +105,28 @@
         <div id="pagination" class="pagination"></div>
 
         <script src="index.js"></script>
+    </section>
+
+    <section class="section container" id="featureSection">
+        <div class="section__head">
+            <h2 class="section__title">Featured Properties</h2>
+            <p>Each listing provides unique features, quality, and <br>
+                 location for an exclusive living experience.</p>
+        </div>
+
+        <div class="scroller" aria-label="Featured properties">
+            <div class="scroller__track">
+                <!-- Group A -->
+                <div class="scroller__group">
+                    <!-- dynamic-card -->
+                    <div class="feature-card" id="featureCard">
+
+                    </div>
+
+                    <script src="/scripts/card-feature.js"></script>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">

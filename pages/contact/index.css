@@ -32,6 +32,13 @@
     background-color: var(--card);
 }
 
+.subscribe-btn {
+  width: 100%;
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+}
+
 .subscribe__row {
     margin-bottom: 24px;
 }
